@@ -24,6 +24,7 @@ export interface ThemeConfig {
 }
 
 export default defineConfigWithTheme<ThemeConfig>({
+  base: '/Homura/',
   lang: 'zh-CN',
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
@@ -62,11 +63,11 @@ export default defineConfigWithTheme<ThemeConfig>({
   ],
   ignoreDeadLinks: true,
   // 生成站点地图
-  // sitemap: {
-  //   hostname: 'https://vitepress-theme-bluearchive.vercel.app',
-  // },
-  title: "Sensei's 部落格",
-  description: "Sensei's 部落格",
+  sitemap: {
+    hostname: 'https://homura-xiao.github.io/Homura',
+  },
+  title: "Homura's Blog",
+  description: "Homura's Blog - Built with VitePress",
   themeConfig: {
     // navBar
     menuList: [
@@ -76,29 +77,29 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     //banner区配置
     videoBanner: false,
-    name: "Sensei's 部落格",
-    welcomeText: 'Hello, VitePress',
-    motto: ['和你的日常，就是奇迹', '何気ない日常で、ほんの少しの奇跡を見つける物語。'],
+    name: "Homura's Blog",
+    welcomeText: 'Welcome to my blog',
+    motto: ['记录生活，分享技术', 'Record life, share technology'],
     social: [
-      { icon: 'github', url: 'https://github.com/' },
+      { icon: 'github', url: 'https://github.com/Homura-xiao' },
       { icon: 'bilibili', url: 'https://www.bilibili.com/' },
       { icon: 'qq', url: 'https://im.qq.com/index/' },
       { icon: 'wechat', url: 'https://weixin.qq.com/' },
     ],
 
     //footer配置
-    footerName: 'Sensei',
+    footerName: 'Homura',
     poweredList: [
       { name: 'VitePress', url: 'https://github.com/vuejs/vitepress' },
       { name: 'GitHub Pages', url: 'https://docs.github.com/zh/pages' },
     ],
 
     //gitalk配置
-    clientID: 'Ov23lia9U9wFN3WMyoKK',
-    clientSecret: 'b2418ab598c188c43a247c99e728dd2735d58c3b',
-    repo: 'vitepress-theme-bluearchive',
-    owner: 'Alittfre',
-    admin: ['Alittfre'],
+    clientID: '',
+    clientSecret: '',
+    repo: 'Homura',
+    owner: 'Homura-xiao',
+    admin: ['Homura-xiao'],
   },
   markdown: {
     theme: 'github-light',
